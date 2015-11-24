@@ -2,7 +2,7 @@ package GUI;
 
 import javax.swing.JPanel;
 import javax.swing.JButton;
-import java.awt.Color;
+import java.awt.event.ActionListener;
 
 public class Menu extends JPanel {
 
@@ -37,6 +37,30 @@ public class Menu extends JPanel {
 		btnLogout.setBounds(166, 244, 117, 29);
 		add(btnLogout);
 		
-		
 	}
+	
+	public void addActionListener(ActionListener l) {
+		btnCreate.addActionListener(l);
+		btnJoin.addActionListener(l);
+		btnDelete.addActionListener(l);
+		btnHighscore.addActionListener(l);
+		btnLogout.addActionListener(l);
+	}
+	
+	public JButton getBtnCreate() {
+		return btnCreate;
+	}
+	public JButton getBtnJoin() {
+		return btnJoin;
+	}
+	public JButton getBtnDelete() {
+		return btnDelete;
+	}
+	public JButton getBtnHighscore() {
+		return btnHighscore;
+	}
+	public JButton getBtnLogout() {
+		return btnLogout;
+	}
+	
 }

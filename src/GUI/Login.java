@@ -1,7 +1,8 @@
 package GUI;
 
-import javax.swing.JPanel;
+import java.awt.event.ActionListener;
 
+import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -38,5 +39,13 @@ public class Login extends JPanel {
 		passwordField.setBounds(228, 123, 179, 28);
 		add(passwordField);
 	}
-
+	public void addActionListener(ActionListener l) {
+		btnLogin.addActionListener(l);
+		
+	}
+	
+	public JButton getbtnLogin() {
+		return btnLogin;
+	}
+	
 }
