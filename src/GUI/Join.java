@@ -3,31 +3,30 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
 	
 
 public class Join extends JPanel {
 	
-private JButton btnMenuBack;
+private JButton btnMenuB;
 	
 	public Join() {
 		setLayout(null);
 		
 
-		btnMenuBack = new JButton("Back to menu");
-		btnMenuBack.setBounds(207, 242, 200, 29);
-		add(btnMenuBack);
+		btnMenuB = new JButton("Back to menu");
+		btnMenuB.setBounds(207, 242, 200, 29);
+		add(btnMenuB);
 		
 	}
 	
 	public void addActionListener(ActionListener l) {
-		btnMenuBack.addActionListener(l);
+		btnMenuB.addActionListener(l);
 		
 	}
 	
 	
-	public JButton btnMenuBack() {
-		return btnMenuBack;
+	public JButton btnMenuB() {
+		return btnMenuB;
 	}
 	}
 

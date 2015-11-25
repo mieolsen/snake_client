@@ -6,26 +6,26 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Highscore extends JPanel {
-	private JButton btnMenuBack;
+	private JButton btnMenuBa;
 	
 	public Highscore() {
 		setLayout(null);
 		
 		
 		
-		btnMenuBack = new JButton("Back to menu");
-		btnMenuBack.setBounds(207, 242, 200, 29);
-		add(btnMenuBack);
+		btnMenuBa = new JButton("Back to menu");
+		btnMenuBa.setBounds(207, 242, 200, 29);
+		add(btnMenuBa);
 		
 	}
 	
 	public void addActionListener(ActionListener l) {
-		btnMenuBack.addActionListener(l);
+		btnMenuBa.addActionListener(l);
 		
 	}
 	
 	
-	public JButton btnMenuBack() {
-		return btnMenuBack;
+	public JButton btnMenuBa() {
+		return btnMenuBa;
 	}
 }

@@ -48,7 +48,11 @@ public void run(){
 	
 	frame.getCreate().addActionListener(new CreateActionListener());
 	
-	frame.getCreate().addActionListener(new JoinActionListener());
+	frame.getJoin().addActionListener(new JoinActionListener());
+	
+	frame.getHighscore().addActionListener(new HighscoreActionListener());
+	
+	frame.getDelete().addActionListener(new DeleteActionListener());
 	 
 	/* Makes the object, frame, show the Login panel,
 	 * as referenced in the CardLayout.
@@ -103,7 +107,7 @@ public void run(){
 	private class CreateActionListener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
 					
-					// If the Back button is clicked, show UserMenu panel in Window.
+					// If the Back button is clicked, show UserMenu panel in frame.
 					if (e.getSource() == frame.getCreate().btnMenuBack()){
 						frame.getCreate();
 						frame.show(frame.MENU);
@@ -113,15 +117,34 @@ public void run(){
 	private class JoinActionListener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
 			
-					// If the Back button is clicked, show UserMenu panel in Window.
-					if (e.getSource() == frame.getJoin().btnMenuBack()){
+					// If the Back button is clicked, show UserMenu panel in frame.
+					if (e.getSource() == frame.getJoin().btnMenuB()){
 						frame.getJoin();
 						frame.show(frame.MENU);
 						}
 	}	
 }
+	private class HighscoreActionListener implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+				
+				// If the Back button is clicked, show UserMenu panel in frame.
+				if (e.getSource() == frame.getHighscore().btnMenuBa()){
+					frame.getHighscore();
+					frame.show(frame.MENU);
+					}
+		}	
+	}
+	private class DeleteActionListener implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+				
+				// If the Back button is clicked, show UserMenu panel in frame.
+				if (e.getSource() == frame.getDelete().btnMenuBack()){
+					frame.getDelete();
+					frame.show(frame.MENU);
+					}
+		}	
+	}
 	
-	  
 	
 	
 	}
