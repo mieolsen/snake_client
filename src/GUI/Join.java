@@ -7,26 +7,27 @@ import javax.swing.JPanel;
 
 public class Join extends JPanel {
 	
-private JButton btnMenuB;
+	
+private JButton btnMenuBack;
 	
 	public Join() {
 		setLayout(null);
 		
 
-		btnMenuB = new JButton("Back to menu");
-		btnMenuB.setBounds(207, 242, 200, 29);
-		add(btnMenuB);
+		btnMenuBack = new JButton("Back to menu");
+		btnMenuBack.setBounds(207, 242, 200, 29);
+		add(btnMenuBack);
 		
 	}
 	
 	public void addActionListener(ActionListener l) {
-		btnMenuB.addActionListener(l);
+		btnMenuBack.addActionListener(l);
 		
 	}
 	
 	
-	public JButton btnMenuB() {
-		return btnMenuB;
+	public JButton btnMenuBack() {
+		return btnMenuBack;
 	}
 	}
 

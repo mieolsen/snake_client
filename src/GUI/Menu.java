@@ -11,7 +11,7 @@ public class Menu extends JPanel {
 	private JButton btnDelete;
 	private JButton btnHighscore;
 	private JButton btnLogout;
-	
+	// private JButton btnAddUser;
 	
 	public Menu() {
 	
@@ -37,6 +37,10 @@ public class Menu extends JPanel {
 		btnLogout.setBounds(166, 244, 117, 29);
 		add(btnLogout);
 		
+		//btnAddUser = new JButton("Add user");
+		//btnAddUser.setBounds(309, 26, 117, 29);
+		//add(btnAddUser);
+		
 	}
 	
 	public void addActionListener(ActionListener l) {
@@ -45,6 +49,7 @@ public class Menu extends JPanel {
 		btnDelete.addActionListener(l);
 		btnHighscore.addActionListener(l);
 		btnLogout.addActionListener(l);
+		//btnAddUser.addActionListener(l);
 	}
 	
 	public JButton getBtnCreate() {
@@ -62,5 +67,7 @@ public class Menu extends JPanel {
 	public JButton getBtnLogout() {
 		return btnLogout;
 	}
-	
+	//public JButton getbtnAddUser() {
+	//	return btnAddUser;
+	//}
 }

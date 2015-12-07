@@ -15,6 +15,7 @@ public class Login extends JPanel {
 	private JButton btnLogin;
 	private JTextField txtUsername;
 	private JPasswordField passwordField;
+	private JButton btnAddUser;
 	
 	public Login() {
 		setLayout(null);
@@ -38,14 +39,29 @@ public class Login extends JPanel {
 		passwordField = new JPasswordField();
 		passwordField.setBounds(228, 123, 179, 28);
 		add(passwordField);
+		
+		btnAddUser = new JButton("Sign up");
+		btnAddUser.setBounds(60, 242, 117, 29);
+		add(btnAddUser);
 	}
 	public void addActionListener(ActionListener l) {
 		btnLogin.addActionListener(l);
-		
+		btnAddUser.addActionListener(l);
 	}
 	
 	public JButton getbtnLogin() {
 		return btnLogin;
 	}
 	
+	public String getUsername() {
+		return txtUsername.getText();
+	}
+	
+	public String getPassword() {
+		return passwordField.getText();
+	}
+	
+	public JButton getbtnAddUser() {
+		return btnAddUser;
+	}
 }

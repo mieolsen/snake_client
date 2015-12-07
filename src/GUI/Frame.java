@@ -14,6 +14,7 @@ public class Frame extends JFrame {
 	public static final String CREATE = "name_0004";
 	public static final String HIGHSCORE = "name_0005";
 	public static final String DELETE = "name_0006";
+	public static final String ADD = "name_0007";
 	
 	/** Declare private reference variable contentPane of type JPanel. */
 	private JPanel contentPane;
@@ -25,6 +26,7 @@ public class Frame extends JFrame {
 	private Create create;
 	private Highscore highscore;
 	private Delete delete;
+	private Add add;
 	
 	/** Declare private reference variable c of type CardLayout.*/
 	private CardLayout c;
@@ -45,9 +47,6 @@ public class Frame extends JFrame {
 			
 			// Initializes setLayout method from object. 
 			contentPane.setLayout(new CardLayout(0, 0));
-			
-			
-			
 
 			// Initializes login, and adds the panel to object contentPane.
 			login = new Login();
@@ -72,6 +71,11 @@ public class Frame extends JFrame {
 			// Initializes Delete, and adds the panel to object contentPane.
 			delete = new Delete();
 			contentPane.add(delete, DELETE);
+			
+			// Initializes Delete, and adds the panel to object contentPane.
+			add = new Add();
+			contentPane.add(add, ADD);
+						
 						
 			/*
 			 *  Instantiate c as the CardLayout by using
@@ -99,10 +103,12 @@ public class Frame extends JFrame {
 		public Delete getDelete() {
 			return delete;
 		}
+		public Add getAdd() {
+			return add;
+		}
+		
 		/**
 		 * Show.
-		 *
-		 * @param card the card
 		 */
 		public void show(String card) {
 			c.show(this.getContentPane(), card);

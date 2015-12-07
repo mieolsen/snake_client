@@ -2,5 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/jersey-client.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/gson-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/jersey-bundle-1.17.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/mysql-connector-java-5.1.37-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/Mie/Documents/snake/libs/commons-io-2.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
