@@ -11,35 +11,40 @@ public class Menu extends JPanel {
 	private JButton btnDelete;
 	private JButton btnHighscore;
 	private JButton btnLogout;
-	// private JButton btnAddUser;
+	private JButton btnDeleteUser;
+	private JButton btnStart;
 	
 	public Menu() {
 	
 		setLayout(null);
 		 
 		btnCreate = new JButton("Create Game");
-		btnCreate.setBounds(166, 26, 117, 29);
+		btnCreate.setBounds(92, 26, 117, 29);
 		add(btnCreate);
 		
 		btnJoin = new JButton("Join Game");
-		btnJoin.setBounds(166, 79, 117, 29);
+		btnJoin.setBounds(92, 79, 117, 29);
 		add(btnJoin);
 		
 		btnDelete = new JButton("Delete Game");
-		btnDelete.setBounds(166, 135, 117, 29);
+		btnDelete.setBounds(235, 79, 117, 29);
 		add(btnDelete);
 		
 		btnHighscore = new JButton("Highscore");
-		btnHighscore.setBounds(166, 188, 117, 29);
+		btnHighscore.setBounds(92, 141, 117, 29);
 		add(btnHighscore);
 		
 		btnLogout = new JButton("Log out");
 		btnLogout.setBounds(166, 244, 117, 29);
 		add(btnLogout);
 		
-		//btnAddUser = new JButton("Add user");
-		//btnAddUser.setBounds(309, 26, 117, 29);
-		//add(btnAddUser);
+		btnDeleteUser = new JButton("Delete user");
+		btnDeleteUser.setBounds(235, 141, 117, 29);
+		add(btnDeleteUser);
+		
+		btnStart = new JButton("Start game");
+		btnStart.setBounds(235, 26, 117, 29);
+		add(btnStart);
 		
 	}
 	
@@ -49,7 +54,8 @@ public class Menu extends JPanel {
 		btnDelete.addActionListener(l);
 		btnHighscore.addActionListener(l);
 		btnLogout.addActionListener(l);
-		//btnAddUser.addActionListener(l);
+		btnDeleteUser.addActionListener(l);
+		btnStart.addActionListener(l);
 	}
 	
 	public JButton getBtnCreate() {
@@ -67,7 +73,10 @@ public class Menu extends JPanel {
 	public JButton getBtnLogout() {
 		return btnLogout;
 	}
-	//public JButton getbtnAddUser() {
-	//	return btnAddUser;
-	//}
+	public JButton getBtnDeleteUser() {
+		return btnDeleteUser;
+	}
+	public JButton getBtnStart() {
+		return btnStart;
+	}
 }

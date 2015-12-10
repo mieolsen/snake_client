@@ -21,7 +21,7 @@ public class Login extends JPanel {
 		setLayout(null);
 		
 		btnLogin = new JButton("Login");
-		btnLogin.setBounds(207, 242, 79, 29);
+		btnLogin.setBounds(55, 242, 132, 29);
 		add(btnLogin);
 		
 		lblUsername = new JLabel("Username");
@@ -41,7 +41,7 @@ public class Login extends JPanel {
 		add(passwordField);
 		
 		btnAddUser = new JButton("Sign up");
-		btnAddUser.setBounds(60, 242, 117, 29);
+		btnAddUser.setBounds(238, 242, 117, 29);
 		add(btnAddUser);
 	}
 	public void addActionListener(ActionListener l) {
